@@ -1,11 +1,11 @@
 FROM php:7.4-apache
 
 RUN apt-get update && \
-			apt-get install -y \
-		  libmcrypt-dev \
-			zip \
-			nano \
-			gnupg2
+	apt-get install -y \
+	libmcrypt-dev \
+	zip \
+	nano \
+	gnupg2
 
 # Microsoft SQL Server Prerequisites
 # from: https://laravel-news.com/install-microsoft-sql-drivers-php-7-docker
