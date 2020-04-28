@@ -1,5 +1,5 @@
 # docker-lumen-sqlsrv
-docker image with lumen microframework and sql server driver
+docker image for lumen microframework with sql server driver
 
 1- create a folder /src and place lumen source code there
 
