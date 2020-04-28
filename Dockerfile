@@ -5,7 +5,8 @@ RUN apt-get update && \
 	libmcrypt-dev \
 	zip \
 	nano \
-	gnupg2
+	gnupg2 \
+	libxml2-dev
 
 # Microsoft SQL Server Prerequisites
 # from: https://laravel-news.com/install-microsoft-sql-drivers-php-7-docker
@@ -27,6 +28,8 @@ RUN apt-get update \
         msodbcsql17
 
 RUN pecl install sqlsrv pdo_sqlsrv
+
+RUN docker-php-ext-install soap
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
